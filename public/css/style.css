@@ -1,0 +1,676 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block
+}
+
+body, html {
+    font-size: 15px !important;
+    color: #999;
+    font-weight: 400;
+    height: 100%;
+    margin-top: -58px;
+    padding-top: 58px;
+    line-height: 20px !important;
+    -webkit-text-size-adjust: none;
+}
+
+#app {
+    height: 100%;
+}
+
+
+.clearMy {
+    clear: both;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.red,
+.red * {
+    color: #ff6666;
+}
+
+.no-pd {
+    padding: 0 !important;
+}
+
+.p-inherit {
+    position: inherit !important;
+}
+
+.center {
+    text-align: center;
+}
+
+:visited, :hover, :focus, :active {
+    outline: none;
+    text-decoration: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.row {
+    width: 100%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .fleft {
+    float: left;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 24.99%;
+}
+
+.col-4 {
+    width: 33.32%;
+}
+
+.col-5 {
+    width: 41.65%;
+}
+
+.col-6 {
+    width: 49.98%;
+}
+
+.col-7 {
+    width: 58.31%;
+}
+
+.col-8 {
+    width: 66.64%;
+}
+
+.col-9 {
+    width: 74.97%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.63%;
+}
+
+.col-12 {
+    width: 99.99%;
+}
+
+.col-ml-1 {
+    margin-left: 8.33%;
+}
+
+.col-ml-2 {
+    margin-left: 16.66%;
+}
+
+.col-ml-3 {
+    margin-left: 24.99%;
+}
+
+.col-ml-4 {
+    margin-left: 33.32%;
+}
+
+.col-ml-5 {
+    margin-left: 41.65%;
+}
+
+.col-ml-6 {
+    margin-left: 49.98%;
+}
+
+.col-ml-7 {
+    margin-left: 58.31%;
+}
+
+.col-ml-8 {
+    margin-left: 66.64%;
+}
+
+.col-ml-9 {
+    margin-left: 74.97%;
+}
+
+.col-ml-10 {
+    margin-left: 83.33%;
+}
+
+.col-ml-11 {
+    margin-left: 91.63%;
+}
+
+.with-img {
+    border: 1px solid !important;
+}
+
+/* header */
+header {
+    min-height: 56px;
+    border-bottom: 1px solid #999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.35);
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.block {
+    display: block;
+}
+
+.head-row {
+    width: 81%;
+    height: 56px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 12;
+}
+
+.head-row > div {
+    display: table;
+    height: 100%;
+}
+
+.head-row > div a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+}
+
+.head-row > div .logo-holder {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+}
+
+.head-row .icons a {
+    width: 50%;
+    text-align: center;
+}
+
+.head-row .icons a:first-child img {
+    margin-top: -4px;
+    margin-right: 7px;
+}
+
+.head-row .icons a:last-child img {
+    height: 30px;
+    margin-top: 3px;
+}
+
+.head-row .icons .search-icon img {
+    height: 30px;
+    margin-top: 3px;
+}
+
+.head-row > div a .top-icon {
+    height: 32px;
+}
+
+.head-row > div a .top-icon,
+.head-row > div a .logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.head-row > div .logo-holder .logo,
+.head-row > div a .logo {
+    width: 114px;
+    padding-top: 4px;
+}
+
+/* header end */
+
+/* menu animation */
+body #burger {
+    display: none;
+}
+
+body #burger ~ .black {
+    position: fixed;
+    top: 58px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    visibility: hidden;
+    z-index: 3;
+
+}
+
+body #burger ~ nav {
+    background: #fafafa;
+    position: fixed;
+    top: 58px;
+    left: -101%;
+    width: 60%;
+    height: 100%;
+    z-index: 7;
+    overflow: hidden;
+    visibility: hidden;
+    transition: .5s;
+}
+
+body #burger ~ nav > ul {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-right: 1px solid #999;
+    height: 100%;
+    background: #fff;
+}
+
+
+body #burger:checked ~ nav {
+    left: 0;
+    visibility: visible;
+    transition: .5s;
+}
+
+body #burger:checked ~ .black {
+    visibility: visible;
+    transition: .5s;
+    overflow: hidden;
+}
+
+body #burger:checked + .burgerlable {
+    width: 100%;
+    height: 100%;
+}
+
+body #burger:checked ~ .wrapper {
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+}
+
+/* menu animation end */
+
+/* menu styles */
+body #burger ~ nav {
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body #burger ~ nav > ul {
+    display: table;
+}
+
+body #burger ~ nav > ul li {
+    display: table-row;
+    width: 100%;
+}
+
+body #burger ~ nav > ul li a {
+    display: table-cell;
+    vertical-align: middle;
+    /*padding: 0 12px 0 12px;*/
+    text-align: left;
+    border-bottom: 1px solid #b5b5b5;
+    border-collapse: collapse;
+    padding-left: 15px;
+}
+
+body #burger ~ nav > ul li a span {
+    line-height: inherit;
+    display: inline-block;
+    width: 75%;
+    vertical-align: middle;
+}
+
+.wrapper .work-block h1 .head-ico,
+.wrapper .info h1 .head-ico,
+body #burger ~ nav > ul li i {
+    padding-right: 15px;
+    display: block;
+    margin: 0 auto;
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+
+body #burger ~ nav > ul li i {
+    padding-right: 5px !important;
+    display: inline-block;
+    width: 35px;
+    margin: 0;
+    float: none;
+}
+
+.wrapper .work-block h1 .head-ico,
+.wrapper .info h1 .head-ico {
+    display: inline-block;
+    float: none;
+    margin-left: -20px;
+}
+
+body #burger ~ nav > ul li i img {
+    width: 25px;
+    /*height: 30px;*/
+    vertical-align: middle;
+}
+
+.wrapper .info .share p i img,
+.wrapper .work-block h1 .head-ico img,
+.wrapper .info h1 .head-ico img {
+    width: 25px;
+    height: 25px;
+}
+
+
+body #burger + .burgerlable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.burgerlable {
+    display: block;
+    background: url("/public/img/menu.svg") 12px 16px no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: 26px 23px;
+}
+
+.wrapper {
+    transition: 0.5s;
+    padding: 58px 10px 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100%;
+}
+
+.wrapper .info {
+    text-align: center;
+}
+
+.wrapper .work-block {
+    margin-bottom: 10px;
+}
+
+.wrapper .work-block h1,
+.wrapper .info h1 {
+    display: block;
+    margin-top: 11px;
+    padding-bottom: 4px;
+    font-size: 16px;
+}
+
+.wrapper .info .share p i,
+.wrapper .info h1 i,
+.wrapper .work-block h1 i,
+.wrapper .info .share p span,
+.wrapper .work-block h1 span,
+.wrapper .info h1 span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wrapper .info h1 span {
+    font-weight: 400;
+    font-size: 16px;
+    vertical-align: top;
+    margin-top: 3px;
+    letter-spacing: 1px;
+}
+
+.wrapper .info .page-part {
+    margin-top: 35px;
+}
+
+.wrapper .info .share p i {
+    margin-left: 10px;
+}
+
+.select-style select {
+    padding: 6px 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: none;
+    background: transparent none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #989898;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+.gray-btn,
+.turquoise-btn {
+    display: block;
+    width: 100%;
+    border: none;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 13px;
+    letter-spacing: 0.4pt;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+}
+
+.gray-btn {
+    background: #999;
+}
+
+
+.work-block .settings {
+    position: absolute;
+}
+
+.work-block .settings .center {
+    margin-top: 10px;
+}
+
+.work-block .border-rounded {
+    margin-top: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.work-block .border-rounded .col-10 {
+    margin: 10px 0;
+}
+
+.work-block .switch-buttons {
+    position: relative;
+    margin: 10px 0;
+}
+
+.work-block .switch-buttons .switch-buttons-bg {
+    background: #999;
+    border-radius: 10px;
+    width: 35px;
+    height: 19px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.work-block .switch-buttons .radio-styled {
+    display: none;
+}
+
+.work-block .switch-buttons .radio-styled + label {
+    background: transparent;
+    display: block;
+    position: relative;
+    z-index: 999;
+    width: 12px;
+    height: 12px;
+    float: right;
+    margin-top: 3px;
+    margin-right: 4px;
+}
+
+.work-block .switch-buttons .radio-styled:checked + label {
+    display: block;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.work-block .settings .turquoise-btn {
+    margin-top: 20px;
+}
+
+.padding-vert-30 {
+    padding: 30px 0;
+}
+
+.no-top-margin {
+    margin-top: 0 !important;
+}
+
+.no-bottom-margin {
+    margin-bottom: 3px !important;
+}
+
+.head-row .icons span {
+    width: 50%;
+    text-align: center;
+}
+
+.head-row > div span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+}
+
+.l-holder {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.l-holder .landing {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.landing p:nth-last-child(2) {
+    margin-bottom: 50px;
+}
+
+.l-holder .landing img {
+    width: 15%;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.l-holder .landing p {
+    font-size: 17px;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+#head-row-block img {
+    margin-top: -80px;
+    margin-left: 40px;
+}
+
+.l-holder .landing .l-footer {
+    color: #afafaf;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+    position: absolute;
+}
+
+#turn-disp .turn-cont-holder {
+    display: table-cell !important;
+    vertical-align: middle;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+#turn-disp {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.wrapper .home h1 {
+    font-size: 20px;
+}
